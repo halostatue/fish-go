@@ -5,7 +5,7 @@ interactive shell">fish shell</a> to ensure that GOROOT and GOPATH are always
 set and that $GOROOT/bin and $GOPATH/bin are set properly in $PATH (via
 fish_user_paths).
 
-[![GitHub tag](https://img.shields.io/github/tag/halostatue/fish-go.svg)](https://github.com/halostatue/fish-go/releases)
+[![Version](https://img.shields.io/github/tag/halostatue/fish-go.svg?label=Version)](https://github.com/halostatue/fish-go/releases)
 
 ## Installation
 
