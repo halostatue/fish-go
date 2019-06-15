@@ -1,6 +1,6 @@
 if not command -sq go
     # If there is no go executable, stop with a warning.
-    echo 1>2 'Binary for go is not installed.'
+    echo 1>&2 'Binary for go is not installed.'
     exit
 end
 
