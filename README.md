@@ -1,15 +1,14 @@
 # halostatue/fish-go
 
-A quick plugin for <a href="https://fishshell.com" title="friendly
-interactive shell">fish shell</a> to ensure that GOROOT and GOPATH are always
-set and that $GOROOT/bin and $GOPATH/bin are set properly in $PATH (via
-fish_user_paths).
+A quick plugin for [fish shell][] to ensure that `$GOROOT` and `$GOPATH` are
+always set and that `$GOROOT/bin` and `$GOPATH/bin` are set properly in `$PATH`
+(via `$fish_user_paths`).
 
-[![Version](https://img.shields.io/github/tag/halostatue/fish-go.svg?label=Version)](https://github.com/halostatue/fish-go/releases)
+[![Version][]][]
 
 ## Installation
 
-Install with [Fisher](https://github.com/jorgebucaran/fisher) (recommended):
+Install with [Fisher][] (recommended):
 
 ```fish
 fisher add halostatue/fish-go
@@ -26,10 +25,16 @@ directory structure.
 
 ### System Requirements
 
-- [fish](https://github.com/fish-shell/fish-shell) 3.0+
+- [fish][] 3.0+
 
 ## Functions
 
 ## License
 
 [MIT](LICENCE.md)
+
+[fish shell]: https://fishshell.com "friendly interactive shell"
+[Version]: https://img.shields.io/github/tag/halostatue/fish-go.svg?label=Version
+![Version][]: https://github.com/halostatue/fish-go/releases
+[Fisher]: https://github.com/jorgebucaran/fisher
+[fish]: https://github.com/fish-shell/fish-shell

@@ -42,4 +42,6 @@ function _halostatue_fish_go_uninstall -e halostatue_fish_go_uninstall
 
     set -Uq GOROOT
     and set -e GOROOT
+
+    functions -e (status function)
 end
