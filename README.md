@@ -1,8 +1,8 @@
 # halostatue/fish-go
 
 A quick plugin for [fish shell][] to ensure that `$GOROOT` and `$GOPATH` are
-always set and that `$GOROOT/bin` and `$GOPATH/bin` are set properly in `$PATH`
-(via `$fish_user_paths`).
+always set and that `$GOROOT/bin` and `$GOPATH/bin` are set properly in
+`$PATH`.
 
 [![Version][]][]
 
