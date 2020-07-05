@@ -1,5 +1,13 @@
 # halostatue/fish-go Changelog
 
+## v1.1.2
+
+- Correct handling of Go-related path variables.
+
+## v1.1.1
+
+- Correct specification in the fishfile of the dependency
+
 ## v1.1
 
 - Change from universal variables to global exported variables.

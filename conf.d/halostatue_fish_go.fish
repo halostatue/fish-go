@@ -1,20 +1,29 @@
 if not command -sq go
     # If there is no go executable, stop with a warning.
-    echo 1>&2 'Binary for go is not installed.'
+    echo >&2 'Binary for go is not installed.'
     exit
 end
 
-function _halostatue_fish_go_update_path -a old_path new_path
-    set -l i (contains -i $old_path/bin $fish_user_paths)
-    and set -e fish_user_paths[$i]
+function _halostatue_fish_go_clean_fup
+    for arg in $argv
+        set -l i (contains -i $arg/bin $fish_user_paths)
+        and set -e fish_user_paths[$i]
+    end
+end
 
-    set i (contains -i $old_path/bin $PATH)
-    and set -e PATH[$i]
+function _halostatue_fish_go_update_path -a old_path new_path
+    # Remove from $fish_user_paths
+    _halostatue_fish_go_clean_fup $old_path $new_path
 
     if test -n "$new_path"
-        contains -- $new_path/bin $fish_user_paths
-        or path:before $new_path/bin
+        set i (contains -i $old_path/bin $PATH)
+        and set -e PATH[$i]
+    else
+        set new_path $old_path
     end
+
+    contains -- $new_path/bin $PATH $fish_user_paths
+    or path:before $new_path/bin
 end
 
 function _halostatue_fish_go_update_variable -a varname default
@@ -28,6 +37,7 @@ function _halostatue_fish_go_update_variable -a varname default
     and set new_value $default
 
     set -gx $varname $new_value
+
     _halostatue_fish_go_update_path $old_value $new_value
 end
 
