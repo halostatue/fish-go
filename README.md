@@ -11,7 +11,11 @@ always set and that `$GOROOT/bin` and `$GOPATH/bin` are set properly in
 Install with [Fisher][] (recommended):
 
 ```fish
+# Fisher 3.x
 fisher add halostatue/fish-go
+
+# Fisher 4.0+: Dependencies must be installed explicitly
+fisher install halostatue/fish-utils-core@1.x halostatue/fish-go
 ```
 
 <details>
