@@ -1,5 +1,12 @@
 # halostatue/fish-go Changelog
 
+## v2.0
+
+- Super simplified Go-related path handling. Rather than setting `$GOPATH`, this
+  uses the output of `go env` to add `GOROOT/bin/` and `GOPATH/bin` to `$PATH`.
+
+- This uses `fish_add_path`, which requires Fish 3.2 or better.
+
 ## v1.1.2
 
 - Correct handling of Go-related path variables.
