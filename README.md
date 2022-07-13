@@ -10,7 +10,7 @@ are set properly in `$PATH`.
 Install with [Fisher][] (recommended):
 
 ```fish
-fisher install halostatue/fish-go@2.x
+fisher install halostatue/fish-go@v2.x
 ```
 
 <details>
