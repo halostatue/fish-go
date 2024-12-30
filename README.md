@@ -2,12 +2,12 @@
 
 [![Version][]](https://github.com/halostatue/fish-go/releases)
 
-A quick plugin for [fish shell][] to ensure that `$GOROOT/bin` and `$GOPATH/bin`
-are set properly in `$PATH`.
+A quick plugin for [fish shell][fish shell] to ensure that `$GOROOT/bin` and
+`$GOPATH/bin` are set properly in `$PATH`.
 
 ## Installation
 
-Install with [Fisher][] (recommended):
+Install with [Fisher][Fisher] (recommended):
 
 ```fish
 fisher install halostatue/fish-go@2.x
@@ -25,7 +25,7 @@ directory structure.
 
 ### System Requirements
 
-- [fish][] 3.2+
+- [fish][fish] 3.2+
 
 ## Licence
 
