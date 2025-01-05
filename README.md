@@ -1,27 +1,17 @@
 # halostatue/fish-go
 
-[![Version][]](https://github.com/halostatue/fish-go/releases)
+[![Version][version]](https://github.com/halostatue/fish-go/releases)
 
-A quick plugin for [fish shell][fish shell] to ensure that `$GOROOT/bin` and
+A quick plugin for [fish shell][shell] to ensure that `$GOROOT/bin` and
 `$GOPATH/bin` are set properly in `$PATH`.
 
 ## Installation
 
-Install with [Fisher][Fisher] (recommended):
+Install with [Fisher][fisher]:
 
 ```fish
-fisher install halostatue/fish-go@2.x
+fisher install halostatue/fish-go@v2
 ```
-
-<details>
-<summary>Not using a package manager?</summary>
-
----
-
-Copy `conf.d/*.fish` to your fish configuration directory preserving the
-directory structure.
-
-</details>
 
 ### System Requirements
 
@@ -41,7 +31,7 @@ directory structure.
 - [Contributors](./CONTRIBUTORS.md)
 - [Code of Conduct](./CODE_OF_CONDUCT.md)
 
-[fish shell]: https://fishshell.com 'friendly interactive shell'
+[shell]: https://fishshell.com 'friendly interactive shell'
 [version]: https://img.shields.io/github/tag/halostatue/fish-go.svg?label=Version
 [fisher]: https://github.com/jorgebucaran/fisher
 [fish]: https://github.com/fish-shell/fish-shell
