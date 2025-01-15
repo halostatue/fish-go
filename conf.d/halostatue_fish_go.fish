@@ -1,10 +1,12 @@
-# @halostatue/fish-go/conf.d/halostatue_fish_go.fish:v2.1.1
+# @halostatue/fish-go/conf.d/halostatue_fish_go.fish:v2.1.2
 
-command --query go
-or return 0
+if command --query go
+    contains -- (go env GOROOT)/bin $fish_user_paths
+    or fish_add_path --prepend --move --path (go env GOROOT)/bin
 
-contains -- (go env GOROOT)/bin $fish_user_paths
-or fish_add_path --prepend --move --path (go env GOROOT)/bin
+    contains -- (go env GOPATH)/bin $fish_user_paths
+    or fish_add_path --prepend --move --path (go env GOPATH)/bin
+end
 
-contains -- (go env GOPATH)/bin $fish_user_paths
-or fish_add_path --prepend --move --path (go env GOPATH)/bin
+function _halostatue_fish_go_uninstall -e halostatue_fish_go_uninstall
+end

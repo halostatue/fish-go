@@ -1,5 +1,10 @@
 # halostatue/fish-go Changelog
 
+## 2.1.2 / 2025-01-15
+
+- Changed `conf.d/halostatue_fish_go.fish` to no longer exit early if `go` is
+  not present. The uninstall function must be defined in all cases.
+
 ## 2.1.1 / 2025-01-04
 
 - Switched to long flags where possible.
