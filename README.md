@@ -1,6 +1,7 @@
 # halostatue/fish-go
 
 [![Version][version]](https://github.com/halostatue/fish-go/releases)
+[![MIT](https://img.shields.io/badge/licence-MIT-blue?style=for-the-badge "MIT")](https://github.com/halostatue/fish-go/blob/main/LICENCE.md)
 
 A quick plugin for [fish shell][shell] to ensure that `$GOROOT/bin` and
 `$GOPATH/bin` are set properly in `$PATH`.
